@@ -1,5 +1,8 @@
 https://www.virtualbox.org/wiki/Downloads#:~:text=VirtualBox%206.1.30%20platform%20packages
 
+SDK Programming Guide can be downloaded here
+https://www.virtualbox.org/wiki/Technical_documentation#:~:text=The%20%C2%A0SDK%20Programming%20Guide%20of%20the%20current%20VirtualBox%20release
+
 # Virtual Box Testing
 
 This repository represents an examination and evaluation of various Virtual Box services and APIs.
