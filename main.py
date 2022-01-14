@@ -2,6 +2,7 @@
 # Author: Asa LeHolland
 
 import virtualbox
+import vboxapi
 
 vbox = virtualbox.VirtualBox()
 

@@ -7,8 +7,19 @@ Download the zipped VirtualBox SDK
 https://www.virtualbox.org/wiki/Downloads#:~:text=VirtualBox%206.1.30%20Software%20Developer%20Kit%20(SDK)
 
 Unzip the contents
-Navigate to `sdk\installer` and open up a Command Prompt in this subfolder.
+Open up a command prompt in Administrator mode.
+In Administrator Command Prompt, navigate to the unzipped directory, then inside the `sdk\installer` subdirectories.
 Run `python vboxapisetup.py install`.
+
+
+Install Python Version 3.5.4 on your local machine
+https://www.python.org/downloads/release/python-354/
+
+
+
+<!-- Notes on how to use regular VirtualBox GUI -->
+https://www.youtube.com/watch?v=sB_5fqiysi4
+
 
 # Virtual Box Testing
 
@@ -206,3 +217,11 @@ Project Link: [https://github.com/asa-leholland/Virtual Box-testing](https://git
 <!-- MARKDOWN LINKS & IMAGES
 [linkedin-url]: https://www.linkedin.com/in/asa-holland-a2a0b5b7/
 [example-use]: images/{filename}.gif -->
+
+
+## Additional Options
+
+Azure Virtual Machine Management may be an option, but requires the Azure SDK which requires an Azure account and subscription.
+https://github.com/Azure-Samples/virtual-machines-python-manage
+
+https://azure.microsoft.com/en-us/free/free-account-faq/
