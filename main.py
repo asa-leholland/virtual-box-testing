@@ -37,15 +37,42 @@ def query_machine_state_description(machine):
 
     machine_state_descriptions = {
         'MachineState(0)': 'null',
-        'MachineState(1)': 'unlocked',
-        'MachineState(2)': 'locked',
-        'MachineState(3)': 'spawning',
-        'MachineState(4)': 'unlocking',
-        'MachineState(5)': 'running'
+        'MachineState(1)': 'powered off',
+        'MachineState(2)': 'saved',
+        'MachineState(3)': 'teleported',
+        'MachineState(4)': 'live snapshotting',
+        'MachineState(5)': 'starting',
+        'MachineState(6)': 'stopping',
+        'MachineState(7)': 'saving',
+        'MachineState(8)': 'restoring',
+        'MachineState(9)': 'teleporting paused VM',
+        'MachineState(10)': 'teleporting in',
+        'MachineState(11)': 'deleting snapshot online',
+        'MachineState(12)': 'deleting snapshot paused',
+        'MachineState(13)': 'online snapshotting',
+        'MachineState(14)': 'restoring snapshot',
+        'MachineState(15)': 'deleting snapshot',
+        'MachineState(16)': 'setting up',
+        'MachineState(17)': 'snapshotting',
+        'MachineState(18)': 'first online',
+        'MachineState(19)': 'last online',
+        'MachineState(20)': 'first transient',
+        'MachineState(21)': 'last transient'
     }
 
     if str(machine_state) in machine_state_descriptions:
         return machine_state_descriptions[machine_state]
     else:
         return str(machine_state)
+
+def get_screen_resolution_details(session):
+    details = {
+        'height': session.console.display.get_screen_resolution()[0],
+        'width': session.console.display.get_screen_resolution()[1],
+        'bits_per_pixel': session.console.display.get_screen_resolution()[2],
+        'x_origin': session.console.display.get_screen_resolution()[3],
+        'y_origin': session.console.display.get_screen_resolution()[4],
+        'guest_monitor_status': session.console.display.get_screen_resolution()[5]
+        }
+    return details
 
