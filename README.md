@@ -8,10 +8,10 @@ https://www.virtualbox.org/wiki/Technical_documentation#:~:text=The%20%C2%A0SDK%
 Download the zipped VirtualBox SDK
 https://www.virtualbox.org/wiki/Downloads#:~:text=VirtualBox%206.1.30%20Software%20Developer%20Kit%20(SDK)
 
-Unzip the contents
-Open up a command prompt in Administrator mode.
-In Administrator Command Prompt, navigate to the unzipped directory, then inside the `sdk\installer` subdirectories.
-Run `python vboxapisetup.py install`.
+- Unzip the contents
+- Open up a command prompt in Administrator mode.
+- In Administrator Command Prompt, navigate to the unzipped directory, then inside the `sdk\installer` subdirectories.
+- Run `python vboxapisetup.py install`.
 
 
 Attempted to install Python Version 3.5.4 on local machine
@@ -44,9 +44,9 @@ This repository serves as a short demonstration of steps that could be taken to 
 
 This project attempts to implement the following activities related to Virtual Machine management:
 
-<!-- - Provided the name of a virtual machine, restart the virtual machine.
+Provided the name of a virtual machine, restart the virtual machine.
 
-## Methodology
+<!-- - ## Methodology
 
 Each Harvard Sentence List audio file is evaluated aginst the corresponding Harvard Sentence List text file for each speech recognition service examined. For each service, the following information was recorded:
 
@@ -161,7 +161,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/asa-lehollan
 
 Asa LeHolland - asaleholland@gmail.com
 
-Project Link: [https://github.com/asa-leholland/Virtual Box-testing](https://github.com/asa-leholland/Virtual Box-testing)
+Project Link: [https://github.com/asa-leholland/virtual-box-testing](https://github.com/asa-leholland/virtual-box-testing)
 
 <!-- ACKNOWLEDGEMENTS -->
 
