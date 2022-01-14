@@ -76,3 +76,6 @@ def get_screen_resolution_details(session):
         }
     return details
 
+
+if __name__ == '__main__':
+    list_available_machines()

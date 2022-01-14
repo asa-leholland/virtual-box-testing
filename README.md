@@ -3,6 +3,13 @@ https://www.virtualbox.org/wiki/Downloads#:~:text=VirtualBox%206.1.30%20platform
 SDK Programming Guide can be downloaded here
 https://www.virtualbox.org/wiki/Technical_documentation#:~:text=The%20%C2%A0SDK%20Programming%20Guide%20of%20the%20current%20VirtualBox%20release
 
+Download the zipped VirtualBox SDK
+https://www.virtualbox.org/wiki/Downloads#:~:text=VirtualBox%206.1.30%20Software%20Developer%20Kit%20(SDK)
+
+Unzip the contents
+Navigate to `sdk\installer` and open up a Command Prompt in this subfolder.
+Run `python vboxapisetup.py install`.
+
 # Virtual Box Testing
 
 This repository represents an examination and evaluation of various Virtual Box services and APIs.
@@ -19,11 +26,11 @@ This repository serves as a short demonstration of steps that could be taken to 
 
 <!--  -->
 
-## Sources of Sample Audio
+## Background
 
-This project utilizes sample audio generated from a subset of 20 lists taken from [the Harvard Sentences](https://en.wikipedia.org/wiki/Harvard_sentences), a compilation of sample phrases used as a standard for efficacy evaluation of audio-based systems, such as cellular networks. Each list consists of phonetically balanced sentences which consist of specific phoneme (speech component) frequencies matching those that appear in the spoken English language.
+This project attempts to implement the following activities related to Virtual Machine management:
 
-Harvard sentence `.wav` audio files were obtained from an open souce library [here](https://www.voiptroubleshooter.com/open_speech/american.html), and the `.txt` transcripts of those files are copied from Columbia University's Harvard Sentence documentation [here](https://www.cs.columbia.edu/~hgs/audio/harvard.html).
+- Provided the name of a virtual machine, restart the virtual machine.
 
 ## Methodology
 
