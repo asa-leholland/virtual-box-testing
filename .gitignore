@@ -1,9 +1,12 @@
 
-!*/scripting/archived_requests/Note - archived requests go here.txt
-!*/scripting/restart_requests/Note - requests go here.txt
+# exclude everything
+scripting/archived_requests/*
+scripting/restart_requests/*
 
-*/scripting/archived_requests
-*/scripting/restart_requests
+# exception to the rule
+!scripting/archived_requests/.gitkeep 
+!scripting/restart_requests/.gitkeep
+
 
 credentials.py
 
