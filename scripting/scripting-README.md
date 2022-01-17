@@ -17,3 +17,8 @@ Remote VirtualBox notes:
 https://www.virtualbox.org/manual/ch07.html
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vQevc5XdrN6K5ADm2ybDjXvxPyoJ-_8ntQC5951pA12Htlbadk793UIfQNXWslp_rcQO5m3BGe4xBxC/pub?w=960&amp;h=720">
+
+Instructions for Host:
+1. Create a `credentials.py` file with the following content:
+C:\Program Files\Oracle\VirtualBox
+2. On the Host machine, edit environmental variables to include the path to VirtualBox
