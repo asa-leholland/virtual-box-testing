@@ -1,11 +1,11 @@
 
 # exclude everything
-scripting/archived_requests/*
-scripting/restart_requests/*
+*scripting/archived_requests/*
+*scripting/restart_requests/*
 
 # exception to the rule
-!scripting/archived_requests/.gitkeep 
-!scripting/restart_requests/.gitkeep
+!*scripting/archived_requests/.gitkeep 
+!*scripting/restart_requests/.gitkeep
 
 
 credentials.py
