@@ -57,14 +57,18 @@ def shut_down_a_vm(vm_name):
     print(f'Virtual machine {vm_name} has been shut down.')
 
 def process_request(filename):
+    print(filename)
+    print(path_to_requests_dir + '\\restart*')
     
-    if fnmatch.fnmatch(filename, 'restart*.txt'):
+    if fnmatch.fnmatch(filename, path_to_requests_dir + '\\restart*'):
         print('Host has received request to restart a virtual machine')
         f = open(filename, "r")
         requested_vm_name = f.readline()
+        f.close()
 
-        print('IMPORTANT', get_list_of_running_vms())
+        result = get_list_of_running_vms()
         valid_vms = ['Ubuntu 2018']
+        print('IMPORTANT', result, valid_vms)
 
         if requested_vm_name in valid_vms:
             restart_vm(vm_name=requested_vm_name)
@@ -103,12 +107,13 @@ def run_checker():
         create_request_test(vm_name="Ubuntu 2019")
         time.sleep(5)
         for filename in os.listdir(path_to_requests_dir):
-            f = os.path.join(path_to_requests_dir, filename)
-            if os.path.isfile(f):
-                process_request(filename=f)
-                time.sleep(5)
-                running = False
-        shut_down_a_vm("Ubuntu 2018")
+            if filename != ".gitkeep":
+                f = os.path.join(path_to_requests_dir, filename)
+                if os.path.isfile(f):
+                    process_request(filename=f)
+                    time.sleep(5)
+        running = False
+        # shut_down_a_vm("Ubuntu 2018")
                 
 
 
