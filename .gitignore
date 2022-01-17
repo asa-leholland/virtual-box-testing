@@ -1,3 +1,12 @@
+
+!*/scripting/archived_requests/Note - archived requests go here.txt
+!*/scripting/restart_requests/Note - requests go here.txt
+
+*/scripting/archived_requests
+*/scripting/restart_requests
+
+credentials.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
