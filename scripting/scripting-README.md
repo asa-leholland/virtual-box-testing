@@ -1,4 +1,4 @@
-Saving another optiong found here: 
+<!-- Saving another optiong found here: 
 https://forums.virtualbox.org/viewtopic.php?f=6&t=50752
 
 You could also "roll your own" remote-start utility. Here's how I would do it:
@@ -16,9 +16,27 @@ Of course VBscript is all Windows host/guest related, but Mac/Linux should have 
 Remote VirtualBox notes:
 https://www.virtualbox.org/manual/ch07.html
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vQevc5XdrN6K5ADm2ybDjXvxPyoJ-_8ntQC5951pA12Htlbadk793UIfQNXWslp_rcQO5m3BGe4xBxC/pub?w=960&amp;h=720">
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQevc5XdrN6K5ADm2ybDjXvxPyoJ-_8ntQC5951pA12Htlbadk793UIfQNXWslp_rcQO5m3BGe4xBxC/pub?w=960&amp;h=720"> -->
 
-Instructions for Host:
-1. Create a `credentials.py` file with the following content:
-C:\Program Files\Oracle\VirtualBox
-2. On the Host machine, edit environmental variables to include the path to VirtualBox
+# Remote Virtual Machine Management
+These scripts 
+
+# Instructions for Host:
+
+1. On the Host machine, edit environmental variables to include the path to VirtualBox
+
+2. Use the `host_paths_TEMPLATE.py` as a base to create your host paths. On your host machine, rename this file to be `host_paths.py`. Edit the paths of `host_paths.py` as follows:
+    'path_to_vbox_manage' : This should be the path on the Host machine to the Host's copy of VBoxManage.exe 
+    'path_to_working_dir' : This should be the path to the Host folder where this code will be run. 
+    'path_to_requests_dir' : This path should lead to the `restart_requests` subfolder in this directory. This should be a sharable folder that the Host can distribute to the Client to allow for requests to be added.
+    'path_to_request_archives_dir' : This path should lead to the `archived_requests` subfolder in this directory, and represents where records of successful requests will be saved.
+
+3. Run `vm-support-host.py` to begin accepting requests.
+
+# Instructions for Client:
+
+1. Confirm that the host machine has been set up, and that you have shared access to the Host's directory where requests can be submitted.
+
+2. To send a request, you will need to know the name of the virtual machine you want to restart.
+
+3. 
